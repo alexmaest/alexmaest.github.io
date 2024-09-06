@@ -31,6 +31,12 @@ html {
     scroll-behavior: smooth;
 }
 
+.summary-title {
+    font-size: 32px;
+    margin-top: 35px; 
+    margin-left: 30px;
+}
+
 .description-container {
     display: flex;
     flex-direction: row;
@@ -502,6 +508,12 @@ html {
 @media (max-width: 600px) {
     h2 {
         font-size: 24px;
+        text-align: center;
+    }
+
+    .summary-title {
+        font-size: 24px;
+        margin-bottom: 20px;
         text-align: center;
     }
 
