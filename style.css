@@ -18,7 +18,7 @@ nav {
 
 section {
     color: #000000;
-    padding: 50px;
+    padding: 50px 0;
 }
 
 h2 {
@@ -86,18 +86,22 @@ html {
 
 .section-card {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: left;
     background-color: white;
     border-radius: 50px;
-    padding: 50px;
     background-color: #fcfcfc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: auto;
-    padding: 100px;
-    width: 85%;
+    padding: 20px;
+        padding-top: 0px;
+        margin-top: 0px;
+        width: 90%;
+    height: auto;
 }
+
+
 
 .header-content {
     display: flex;
@@ -123,18 +127,6 @@ html {
     font-weight: 500;
     text-decoration: none;
     color: #007bff;
-}
-
-.section-card {
-    display: flex;
-    align-items: flex-start;
-    background-color: white;
-    border-radius: 50px;
-    padding: 50px;
-    background-color: #fcfcfc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: auto;
-    width: 85%;
 }
 
 .project-button {
@@ -184,6 +176,7 @@ html {
     font-weight: 400;
     list-style: none;
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .light-navbar-link a {
@@ -250,14 +243,13 @@ html {
     top: 0;
 }
 
-
 /* Gallery styles */
 .carousel-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
@@ -508,8 +500,13 @@ html {
 /* Responsive styles */
 /* Small screens (less of 600px) */
 @media (max-width: 600px) {
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
     .header-content h1 {
-        font-size: 48px;
+        font-size: 32px;
     }
 
     .header-content p {
@@ -518,19 +515,26 @@ html {
 
     .section-card {
         padding: 20px;
-        width: 100%;
+        padding-top: 0px;
+        margin-top: 0px;
+        width: 90%;
     }
 
     .light-navbar {
         flex-direction: column;
-        height: auto;
+        height: 50px;
     }
 
     .light-navbar-container {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
     }
 
+    .light-navbar-container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
     .gallery-item {
         width: 250px;
         height: auto;
@@ -538,22 +542,26 @@ html {
 
     .gallery-item-1 {
         width: 50px;
-        transform: translateX(-40%);
+        left: 35%;
+        transform: translateY(-150%);
     }
 
     .gallery-item-2 {
         width: 150px;
-        transform: translateX(-50%);
+        left: 25%;
+        transform: translateY(-60%);
     }
 
     .gallery-item-4 {
         width: 150px;
-        transform: translateX(-50%);
+        left: 25%;
+        transform: translateY(60%);
     }
 
     .gallery-item-5 {
         width: 50px;
-        transform: translateX(-60%);
+        left: 35%;
+        transform: translateY(150%);
     }
 
     .slider {
@@ -583,7 +591,7 @@ html {
     .description-title {
         font-size: 20px;
         font-weight: 600;
-        padding: auto;
+        padding-bottom: 30px;
         margin: auto;
     }
 
@@ -593,28 +601,41 @@ html {
         padding: auto;
         margin: auto;
     }
-    
+
     .carousel-buttons {
         grid-row: auto;
-        margin: 100px;
+        margin: 10px;
         display: flex;
         flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .gallery-controls {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
     }
 
     .gallery-controls button {
-        font-size: 10px;
-        width: 165px;
-        padding: 0px;
-        margin: 0px;
+        margin: 10px 0;
+        padding: 10px;
+        width: auto;
+    }
+
+    .gallery-controls-previous::before {
+        transform: rotate(225deg) translateY(880%);
+    }
+
+    .gallery-controls-next::before {
+        top: 160%;
+        transform: rotate(-315deg) translateY(450%);
     }
 }
 
 /* Media query for screens smaller than 1300px */
 @media (max-width: 1300px) {
     .gallery-controls button {
-        /* Adjusting the width dynamically */
         width: calc(470px - ((1300px - 100vw) / 100) * 100);
-        /* Adjusting padding symmetrically */
         padding-left: calc(195px - ((1300px - 100vw) / 100) * 10);
         padding-right: calc(195px - ((1300px - 100vw) / 100) * 10);
     }
@@ -622,6 +643,11 @@ html {
 
 /* Medium screens (600px - 1024px) */
 @media (min-width: 600px) and (max-width: 1366px) {
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
     .header-content h1 {
         font-size: 56px;
     }
@@ -631,7 +657,9 @@ html {
     }
 
     .section-card {
-        padding: 30px;
+        padding: 20px;
+        padding-top: 0px;
+        margin-top: 0px;
         width: 90%;
     }
 
