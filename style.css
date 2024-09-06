@@ -95,9 +95,9 @@ html {
     background-color: #fcfcfc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-        padding-top: 0px;
-        margin-top: 0px;
-        width: 90%;
+    padding-top: 0px;
+    margin-top: 0px;
+    width: 90%;
     height: auto;
 }
 
@@ -534,7 +534,7 @@ html {
         flex-direction: row;
         gap: 20px;
     }
-    
+
     .gallery-item {
         width: 250px;
         height: auto;
