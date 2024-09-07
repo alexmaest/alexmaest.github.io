@@ -119,7 +119,7 @@ function toggleActive(button) {
         ${technologies["nivo"]},
         ${technologies["mysql"]},
         en conjunto con despliegue de contenedores en la nube utilizando ${technologies["docker"]},
-        utilizando la utilización de ${technologies["figma"]} para el desarrollo de Mockups y proveer una aprobación tanto de funcionalidad como de diseño para un posterior desarrollo, cumpliendo con los requerimientos del cliente.`,
+        empleando la herramienta ${technologies["figma"]} para el desarrollo de Mockups y proveer una aprobación tanto de funcionalidad como de diseño para un posterior desarrollo, cumpliendo con los requerimientos del cliente.`,
         
         2: `Utilizando fuentes de datos de
         ${technologies["kaggle"]}, procesados con
