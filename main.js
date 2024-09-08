@@ -4,6 +4,7 @@ const galleryControls = ['previous', 'next'];
 const galleryItems = document.querySelectorAll('.gallery-item');
 const technologies = {
     "react": `<span class="label-container" style="background-color: #73c7de"><i class="fab fa-react"></i> ReactJS</span>`,
+    "reactnative": `<span class="label-container" style="background-color: #73c7de"><i class="fab fa-react"></i> React Native</span>`,
     "node": `<span class="label-container" style="background-color: #7fba87"><i class="fab fa-node-js"></i> NodeJS</span>`,
     "next": `<span class="label-container" style="background-color: #737373"><i class="fab fa-js"></i> NextJS</span>`,
     "express": `<span class="label-container" style="background-color: #c2b767"><i class="fab fa-js"></i> ExpressJS</span>`,
@@ -22,6 +23,7 @@ const technologies = {
     "powerbi": `<span class="label-container" style="background-color: #cccc9b"><i class="fas fa-chart-simple"></i> Power BI</span>`,
     "githubactions": `<span class="label-container" style="background-color: #2e4761"><i class="fab fa-github"></i> GitHub Actions</span>`,
     "cypress": `<span class="label-container" style="background-color: #68a393"><i class="fas fa-check"></i> Cypress Testing</span>`,
+    "jest": `<span class="label-container" style="background-color: #ff7a7a"><i class="fas fa-crown"></i> Jest Testing</span>`,
 
     "cognito": `<span class="label-container" style="background-color: #d6b372"><i class="fab fa-aws"></i> Amazon Cognito</span>`,
     "translate": `<span class="label-container" style="background-color: #d6b372"><i class="fab fa-aws"></i> Amazon Translate</span>`,
@@ -136,13 +138,13 @@ function toggleActive(button) {
         ${technologies["aws"]} con
         ${technologies["docker"]}, (IAM, EC2, RDS y S3), además de CI/CD utilizando
         ${technologies["githubactions"]} e implementando el framework
-        ${technologies["cypress"]}.`,
+        ${technologies["jest"]}.`,
 
-        4: `Enfocado en la implementación de una amplia variedad de servicios para hacer que el usuario tenga multiples opciones de utilizar la plataforma. Mencionando algunas funcionalidades técnicas que posee y la tecnología utilizada: Registro y autenticación de usuarios con
-        ${technologies["cognito"]}, Traducción de publicaciones y comentarios de usuarios con
-        ${technologies["translate"]}, Registro e inicio de sesión mediante reconocimiento facial con
+        4: `Enfocado en la implementación de una amplia variedad de servicios para hacer que el usuario tenga multiples opciones de utilizar la plataforma. En este proyecto implementé servicios de backend y base de datos, mencionando algunas funcionalidades técnicas que posee y la tecnología utilizada: Registro y autenticación de usuarios con
+        ${technologies["cognito"]}, traducción de publicaciones y comentarios de usuarios con
+        ${technologies["translate"]}, registro e inicio de sesión mediante reconocimiento facial con
         ${technologies["rekognition"]}, ChatBot para los usuarios utilizando
-        ${technologies["lex"]}, Almacenamiento de datos mediante
+        ${technologies["lex"]}, almacenamiento de datos mediante
         ${technologies["rds"]} y archivos e imágenes almacenadas con
         ${technologies["s3"]}, mientras el proyecto es alojado en una
         ${technologies["ec2"]}.`,
@@ -152,7 +154,18 @@ function toggleActive(button) {
         ${technologies["springboot"]} y
         ${technologies["java"]}, enviando los datos de la imagen al servicio de
         ${technologies["gcp"]},
-        ${technologies["gcpvision"]}, mostrando los resultados en una interfaz intuitiva y objetiva.`
+        ${technologies["gcpvision"]}, mostrando los resultados en una interfaz intuitiva y objetiva.`,
+
+        6: `Realizado para proveer música en streaming, posee diferentes roles donde el administrador crea usuarios para los artistas, estos últimos tienen la posibilidad de subir sus sencillos o albumes, para que posteriormente el usuario pueda escucharlas según desea. Desarrollé parte del frontend de la aplicación, parte del backend como también consultas para la base de datos, todo esto con
+        ${technologies["reactnative"]},
+        ${technologies["node"]},
+        ${technologies["express"]} y
+        ${technologies["mysql"]} con despliegue de contenedores con
+        ${technologies["docker"]}, almacenamiento de datos mediante
+        ${technologies["rds"]} y archivos e imágenes almacenadas con
+        ${technologies["s3"]}, mientras el proyecto es alojado en una
+        ${technologies["ec2"]} e implementando el framework
+        ${technologies["cypress"]}.`
     };
 
     const projectNumber = button.getAttribute('data-project');

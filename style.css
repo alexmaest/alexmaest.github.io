@@ -107,8 +107,6 @@ html {
     height: auto;
 }
 
-
-
 .header-content {
     display: flex;
     flex-direction: column;
@@ -210,7 +208,7 @@ html {
 
 .slide-track {
     display: flex;
-    width: calc(650px * 16);
+    width: calc(650px * 18);
     animation: scroll 30s linear infinite;
 }
 
@@ -226,7 +224,7 @@ html {
     }
 
     100% {
-        transform: translateX(calc(-650px * 8));
+        transform: translateX(calc(-650px * 9));
     }
 }
 
